@@ -115,7 +115,7 @@ class Text(object):
             grams_list = sorted(grams, key=grams.get, reverse=True)
 
             for g in grams_list:
-                if grams[g] > 4:
+                if grams[g] > 2:
                     # do not want to include n-grams which are substrings of longer n-grams
                     substring = False
                     for s in longest_grams:
